@@ -258,6 +258,11 @@ class Product {
 				},
 			),
 			'metaData'          => \WPGraphQL\WooCommerce\Type\WPObject\Meta_Data_Type::get_metadata_field_definition(),
+            // G2R
+            'is_2roues'       => array(
+                'type'        => 'Boolean',
+                'description' => 'Véhicule ou pas',
+            ),
 		);
 	}
 }

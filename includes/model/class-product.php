@@ -415,6 +415,13 @@ class Product extends WC_Post {
 				},
 			);
 
+            // G2R
+            $fields += array(
+                'is_2roues' => function () {
+                    return ! is_null( $this->wc_data->is_2roues() ) ? $this->wc_data->is_2roues() : null;
+                },
+            );
+
 			$this->fields = array_merge( $this->fields, $fields );
 		}//end if
 	}
